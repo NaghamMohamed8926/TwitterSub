@@ -1,13 +1,6 @@
 package Twitter.Submission;
 
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
-
-import javafx.scene.input.Clipboard;
-
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -15,7 +8,6 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,7 +24,6 @@ public class AutomateTCs {
 	String image4= "Fourth.png";
 	String image5= "Fifth.jpg";
 	String image1path=System.getProperty("user.dir")+"\\src\\test\\resources\\"+image1;
-	;
 	String image2path=System.getProperty("user.dir")+"\\src\\test\\resources\\"+image2;
 	String image3path=System.getProperty("user.dir")+"\\src\\test\\resources\\"+image3;
 	String image4path=System.getProperty("user.dir")+"\\src\\test\\resources\\"+image4;
@@ -71,7 +62,7 @@ public class AutomateTCs {
 	}
 
 //Validate that Twitter user can send a tweet of 280 characters
-	@Test(priority = 1,enabled=false)
+	@Test(priority = 1)
 	public void tweet280char() {
 
 		Login();
@@ -91,7 +82,7 @@ public class AutomateTCs {
 	}
 
 	// Validate that user can't tweet same tweet twice
-	@Test(priority = 2,enabled=false)
+	@Test(priority = 2)
 	public void SameTweet() {
 		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		WebElement Whatishappening = driver.findElement(By.xpath(
@@ -111,7 +102,7 @@ public class AutomateTCs {
 	}
 
 	// Validate that Twitter user can't send a tweet of 281 characters
-	@Test(priority = 3,enabled=false)
+	@Test(priority = 3)
 	public void tweet281char() {
 		driver.navigate().back();
 		driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
@@ -124,7 +115,7 @@ public class AutomateTCs {
 				"/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]"));
 		Assert.assertEquals(CountButton.getText(), "-1", "Error as text can't Accept 281 character");
 	}
-@Test (priority=4,enabled=false)
+@Test (priority=4)
 
 public void upload4images() throws AWTException, InterruptedException {
 	
@@ -232,7 +223,7 @@ public void upload4images() throws AWTException, InterruptedException {
 }
 
 //Validate that user can Create poll successfully
-@Test (priority=5 ,enabled=false)
+@Test (priority=5)
 public void CreatePoll() throws InterruptedException {
 	
 	driver.navigate().refresh();
