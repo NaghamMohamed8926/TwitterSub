@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54931" started-at="2021-03-14T21:11:59 EET" finished-at="2021-03-14T21:12:54 EET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54931" started-at="2021-03-14T21:11:59 EET" finished-at="2021-03-14T21:12:54 EET">
+      <class name="Twitter.Submission.AutomateTCs">
+        <test-method status="PASS" signature="opentwitter()[pri:0, instance:Twitter.Submission.AutomateTCs@3eb7fc54]" name="opentwitter" is-config="true" duration-ms="6154" started-at="2021-03-14T21:11:59 EET" finished-at="2021-03-14T21:12:06 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opentwitter -->
+        <test-method status="PASS" signature="upload5images()[pri:0, instance:Twitter.Submission.AutomateTCs@3eb7fc54]" name="upload5images" duration-ms="47806" started-at="2021-03-14T21:12:06 EET" finished-at="2021-03-14T21:12:53 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload5images -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Twitter.Submission.AutomateTCs@3eb7fc54]" name="CloseBrowser" is-config="true" duration-ms="772" started-at="2021-03-14T21:12:53 EET" finished-at="2021-03-14T21:12:54 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Twitter.Submission.AutomateTCs -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
